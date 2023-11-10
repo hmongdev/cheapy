@@ -19,7 +19,7 @@ const Home = () => {
             </p>
             
             <h1 className="head-text">
-              Unleash the Power of
+              Find the Cheapest Prices @
               <span className="text-green-500"> Cheapy</span>
             </h1>
             
