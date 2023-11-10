@@ -24,7 +24,7 @@ const NavBar = () => {
           </p>
             </Link>
           
-          <div className="flex border-2 items-center gap-5">
+          <div className="flex items-center gap-5">
             {navIcons.map((icon) => (
               <Image
                 src={icon.src}
