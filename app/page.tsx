@@ -37,8 +37,8 @@ const Home = () => {
       <section className="trending-section">
         <h2 className="section-text/">Trending</h2>
         <div className="flex flex-wrap gap-x-8 gap-y-16">
-          {['Apple iPhone 15', 'Book', 'Sneakers'].map((product) => (
-            <div>{product}</div>
+          {['Apple iPhone 15', 'Book', 'Sneakers'].map((product, i) => (
+            <div key={i}>{product}</div>
           ))}
         </div>
       </section>
