@@ -34,18 +34,18 @@ export async function scrapeAmazonProduct(url: string) {
 		const title = $('#productTitle').text().trim();
 
 		const originalPrice = extractPrice(
-			$('.a-offscreen'),
-			$('.a-price a-text-price'),
-			$('#priceblock_ourprice'),
-			$('.a-price.a-text-price span.a-offscreen'),
-			$('#listPrice'),
-			$('#priceblock_dealprice'),
-			$('.a-size-base.a-color-price')
+			$('.a-offscreen')
+			// $('.a-price a-text-price'),
+			// $('#priceblock_ourprice'),
+			// $('.a-price.a-text-price span.a-offscreen'),
+			// $('#listPrice'),
+			// $('#priceblock_dealprice'),
+			// $('.a-size-base.a-color-price')
 		);
 
 		const currentPrice = extractPrice(
-			$('.a-price-whole'),
-			$('.a-price-fraction')
+			$('.a-price-whole')
+			// $('.a-price-fraction')
 		);
 
 		const outOfStock =
