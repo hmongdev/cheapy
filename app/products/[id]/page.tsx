@@ -20,7 +20,7 @@ const ProductDetails = async ({ params: { id } }: Props) => {
   return (
     <div className="product-container">
       <div className="flex gap-2 lg:flex-row flex-col">
-        <div className="product-image">
+        <div className="product-image shadow-lg">
           <Image
             src={product.image}
             alt={product.title}
@@ -126,8 +126,8 @@ const ProductDetails = async ({ params: { id } }: Props) => {
           {/* <Modal productId={id} /> */}
         </div>
       </div>{" "}
-      <div className="flex flex-row gap-5">
-        <div className="flex gap-5 flex-wrap">
+      <div className="flex justify-center items-center gap-5 w-full">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-5 flex-wrap justify-center items-center">
           <PriceInfoCard
             title="Lowest Price"
             iconSrc="/assets/icons/arrow-down.svg"
